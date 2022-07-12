@@ -8,8 +8,8 @@ nonlcon = @cons_ecm;
 
 x_store = []; f1_store = []; f2_store = []; exitflag_store = [];
 
-global f2_target
-for f2_target = [100,160,220,280,340,400] % Enter the desired/target bound for f2. 
+global epsilon_f2
+for epsilon_f2 = [100,160,220,280,340,400] % Enter the desired/target bound for f2. 
                                           % These target values are used as constraint in the "cons_ecm.m" file.
                                           % Multiple values have been used to generate Pareto front 
     
@@ -22,7 +22,7 @@ for f2_target = [100,160,220,280,340,400] % Enter the desired/target bound for f
     
     x_store = [x_store; x];
     f1_store = [f1_store; f1];
-    f2_store = [f2_store; f2_target];
+    f2_store = [f2_store; epsilon_f2];
     exitflag_store = [exitflag_store; exitflag];
     
 end
