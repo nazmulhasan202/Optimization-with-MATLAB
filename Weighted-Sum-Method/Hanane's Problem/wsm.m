@@ -9,7 +9,7 @@ nonlcon = [];
 x_store = []; f1_store = []; f2_store = []; exitflag_store = [];
 
 global w1
-for w1 = 0:.025:1
+for w1 = 0:.05:1
     [x,fval,exitflag,output] = ...
         fmincon(fun,x0,A,b,Aeq,beq,lb,ub,nonlcon)
 
@@ -22,7 +22,7 @@ for w1 = 0:.025:1
     exitflag_store = [exitflag_store; exitflag];
     
 end
-w = 0:.025:1;
+w = 0:.05:1;
 w = w';
 T = table(w,x_store,f1_store,f2_store,exitflag_store);
 T_sorted = sortrows(T,{'w'})
