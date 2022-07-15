@@ -1,4 +1,4 @@
-minimize w * f1(x) + (1-w) * f2(x)
+minimize: w * f1(x) + (1-w) * f2(x)
 
 subject to, 0 <= x <= 18 
 
