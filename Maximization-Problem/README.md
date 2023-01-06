@@ -1,0 +1,2 @@
+# MATLAB-Codes-for-Maximization-Problem
+These codes are related to a video (https://youtu.be/ScsEwARa-5s) that shows how to solve maximization problems with MATLAB with the 'fmincon' function. The video illustrates two example problems adopted from the website: https://math.libretexts.org/Bookshelves/Calculus/Map%3A_Calculus_-_Early_Transcendentals_(Stewart)/04%3A_Applications_of_Differentiation/4.07%3A_Optimization_Problems (Accessed on 15/06/2020)
